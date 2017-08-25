@@ -64,6 +64,18 @@ myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log
         $scope.currentCollection.length = 0;
         
         $scope.currentCollection = collection.bracelets;
+    } else if (location.hash === "#/category_page_earrings.html") {
+    	$scope.currentCollection.length = 0;
+        
+        $scope.currentCollection = collection.earrings;
+    } else if (location.hash === "#/category_page_necklaces.html") {
+    	$scope.currentCollection.length = 0;
+        
+        $scope.currentCollection = collection.necklaces;
+    } else if (location.hash === "#/category_page_rings.html") {
+    	$scope.currentCollection.length = 0;
+        
+        $scope.currentCollection = collection.rings;
     }
     
 }]);
