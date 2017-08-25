@@ -11,7 +11,7 @@
                 <p class="item-type">{{ collection.type }}</p>
                 <a href="#" class="btn btn-primary edit-btn">EDIT</a>
             </div>
-            <div class="add-item-container flex-box">
+            <div class="add-item-container flex-box" ng-click="nativeMaterial='Gold'; addButtonClicked();">
                  <div class="add-item">
 					<i class="fa fa-plus"></i>
                  </div>
@@ -28,7 +28,7 @@
 				<p class="item-type">{{ collection.type }}</p>
 				<a href="#" class="btn btn-primary edit-btn">EDIT</a>
 			</div>
-             <div class="add-item-container flex-box">
+             <div class="add-item-container flex-box" ng-click="nativeMaterial='Diamond'; addButtonClicked();">
                  <div class="add-item">
 					<i class="fa fa-plus"></i>
                  </div>
@@ -45,11 +45,22 @@
 				<p class="item-type">{{ collection.type }}</p>
 				<a href="#" class="btn btn-primary edit-btn">EDIT</a>
 			</div>
-            <div class="add-item-container flex-box">
+            <div class="add-item-container flex-box" ng-click="nativeMaterial='Silver'; addButtonClicked();">
                  <div class="add-item">
 					<i class="fa fa-plus"></i>
                  </div>
             </div>
 		</section>
     </div>
+</div>
+<!-- Model for entering new item goes here -->
+<div class="new-item-field flex-box" ng-show=isAddClicked>
+    <form class="input-container" ng-submit="addItem()">
+        <h2 class="text-center form-heading">Add New Jwellery</h2>
+        <input type="text" ng-model="item.type" placeholder="Enter Jewellery Type">
+        <input type="text" ng-model="item.material" readonly>
+        <input type="text" ng-model="item.imageUrl" placeholder="Enter Image URL">
+        <button type="submit" value="Add" class="btn btn-primary">Add Item</button>
+        <i class="fa fa-times" ng-click="isAddClicked=false"></i>
+    </form>
 </div>
