@@ -5,21 +5,20 @@ var user = {
         sex: "Male",
         contactInfo: "+91-8884669993"
     },
-    collections: [{
+    collections: {
         bracelets: [{
             type: "Bangle Bracelet",
             material: "Gold",
             imageUrl: "images/bracelets/gold-cuff-bracelet.jpg"
         }, {
-            type: "Cuff Bracelet",
-            material: "Silver",
-            imageUrl: "images/bracelets/silver-charm-bracelet.jpg"
-        }, {
             type: "Link Bracelet",
             material: "Diamond",
             imageUrl: "images/bracelets/diamond-link-bracelet.jpg"
-        }]
-    }, {
+        }, {
+            type: "Cuff Bracelet",
+            material: "Silver",
+            imageUrl: "images/bracelets/silver-charm-bracelet.jpg"
+        }],
         earrings: [{
             type: "Jhumkis",
             material: "Gold",
@@ -32,8 +31,7 @@ var user = {
             type: "Huggies Earrings",
             material: "Silver",
             imageUrl: "images/earrings/silver-huggeis.jpg"
-        }]
-    }, {
+        }],
         rings: [{
             type: "Marriage Ring",
             material: "Gold",
@@ -46,8 +44,7 @@ var user = {
             type: "Knuckle Ring",
             material: "Silver",
             imageUrl: "images/rings/silver-knuckle-ring.jpg"
-        }]
-    }, {
+        }],
     	necklaces: [{
     		type: "Opera Necklace",
     		material: "Gold",
@@ -61,5 +58,5 @@ var user = {
     		material: "Silver",
     		imageUrl: "images/necklaces/silver-thread-nacklace.jpg"
     	}]
-    }]
+    }
 };
