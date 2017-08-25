@@ -46,19 +46,47 @@ myApp.controller('mainController', ['$scope', '$log', function ($scope, $log) {
 
 myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log) {
     
-    $log.log("Category Controller is also working fine");
+    // $log.log("Category Controller is also working fine");
     
-    $log.log(location.hash);
+    // $log.log(location.hash);
 
     var collection = $scope.collections = user.collections;
-    // console.log(collection);
     
     $scope.currentCollection = [];
     
-//    $scope.bracelets = collection.bracelets;
-//    $scope.rings = collection.rings;
-//    $scope.necklaces = collection.necklaces;
-//    $scope.earrings = collection.earrings;
+    $scope.nativeMaterial = "";
+    
+    $scope.item = {
+        type: "",
+        material: $scope.nativeMaterial,
+        imageUrl: ""
+    };
+    
+    $scope.JewelleryItem = function (type, material, imageUrl) {
+        this.type = type;
+        this.material = material;
+        this.imageUrl = imageUrl;
+    }
+    
+    $scope.isAddClicked = false;
+    
+    $scope.addButtonClicked = function () {
+        $scope.isAddClicked = true;
+        $scope.item.material = $scope.nativeMaterial;
+    }
+    
+    $scope.addItem = function () {
+        var obj = $scope.item;
+        var newItem = new $scope.JewelleryItem(obj.type, obj.material, obj.imageUrl);
+        
+        $scope.currentCollection.push(newItem);
+        
+        $scope.isAddClicked = false;
+        
+        $scope.nativeMaterial = "";
+        
+        console.log(newItem);
+    }
     
     if (location.hash === "#/category_page_bracelets.html") {
         $scope.currentCollection.length = 0;
@@ -80,14 +108,3 @@ myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log
     
 }]);
 
-// Using custom directives
-/*myApp.directive('categoryItem', function () {
-	return {
-		restrict: "A",
-		replace: true,
-		templateUrl: "directives/collection-items.html",
-		scope: {
-			categoryItemObject: "="
-		}
-	}
-});*/
