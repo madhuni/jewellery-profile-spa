@@ -68,9 +68,15 @@ myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log
         this.imageUrl = imageUrl;
     }
     
-    $scope.isAddClicked = false;
+    $scope.closeModal = function () {
+    	$scope.isAddClicked = false;
+    	$scope.nativeMaterial = "";
+        obj.type = "";
+        obj.imageUrl = "";
+    }
     
     $scope.addButtonClicked = function () {
+    	console.log("I am clicked.");
         $scope.isAddClicked = true;
         $scope.item.material = $scope.nativeMaterial;
     }
@@ -81,11 +87,13 @@ myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log
         
         $scope.currentCollection.push(newItem);
         
+        // Updating the affecting properties after adding the new item
         $scope.isAddClicked = false;
-        
         $scope.nativeMaterial = "";
+        obj.type = "";
+        obj.imageUrl = "";
         
-        console.log(newItem);
+        // console.log(newItem);
     }
     
     if (location.hash === "#/category_page_bracelets.html") {
