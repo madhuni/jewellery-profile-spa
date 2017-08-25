@@ -1,0 +1,55 @@
+<div class="category-items-container text-center">
+	<h2 class="category-heading">Earrings Collection</h2>
+	<hr>
+    
+    <div class="container-fluid">
+        <h3 class="section-heading text-left">Gold Items</h3>
+        <hr>
+        <section class="row container-fluid text-center flex-box item-section-contanier">
+            <div class="item-section" ng-if="collection.material === 'Gold'" ng-repeat="collection in currentCollection">
+                <img src="{{ collection.imageUrl }}" alt="product" width="200px" height="200px" class="img-responsive item-image">
+                <p class="item-type">{{ collection.type }}</p>
+                <a href="#" class="btn btn-primary edit-btn">EDIT</a>
+            </div>
+            <div class="add-item-container flex-box">
+                 <div class="add-item">
+					<i class="fa fa-plus"></i>
+                 </div>
+            </div>
+        </section> 
+    </div>
+    
+    <div class="container-fluid">
+    	<h3 class="section-heading text-left">Diamond Items</h3>
+	    <hr>
+	     <section class="row container-fluid text-center flex-box item-section-contanier" > 
+			<div class="item-section" ng-if="collection.material === 'Diamond'" ng-repeat="collection in currentCollection">
+	            <img src="{{ collection.imageUrl }}" alt="product" width="200px" height="200px" class="img-responsive item-image">
+				<p class="item-type">{{ collection.type }}</p>
+				<a href="#" class="btn btn-primary edit-btn">EDIT</a>
+			</div>
+             <div class="add-item-container flex-box">
+                 <div class="add-item">
+					<i class="fa fa-plus"></i>
+                 </div>
+            </div>
+		 </section>
+    </div>
+	
+    <div class="container-fluid">
+    	<h3 class="section-heading text-left">Silver Items</h3>
+	    <hr>
+	    <section class="row container-fluid text-center flex-box item-section-contanier" >
+			<div class="item-section" ng-if="collection.material === 'Silver'" ng-repeat="collection in currentCollection">
+	            <img src="{{ collection.imageUrl }}" alt="product" width="200px" height="200px" class="img-responsive item-image">
+				<p class="item-type">{{ collection.type }}</p>
+				<a href="#" class="btn btn-primary edit-btn">EDIT</a>
+			</div>
+            <div class="add-item-container flex-box">
+                 <div class="add-item">
+					<i class="fa fa-plus"></i>
+                 </div>
+            </div>
+		</section>
+    </div>
+</div>
