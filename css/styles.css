@@ -18,7 +18,7 @@
 }
 
 .header-wrapper {
-	max-width: 800px;
+	max-width: 1200px;
 }
 
 .brand-logo {
@@ -33,13 +33,14 @@
 /* Styling for the footer starts here */
 
 footer {
-	margin-top: 20px;
+	border-top: 2px solid #272c65;
+	margin-top: 30px;
 	padding: 10px 30px;
 	text-align: center;
 }
 
 .footer-wrapper {
-	max-width: 800px;
+	max-width: 1200px;
 }
 
 .footer-logo-image {
@@ -61,6 +62,55 @@ footer {
 	margin: 0 5px;
 }
 
+.pages-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Styles for the profile-container goes here */
+.profile_container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+aside {
+	margin: 30px auto;
+	text-align: left;
+}
+
+.profile-pic-container {
+	margin: 0 0 10px;
+}
+
+.profile-pic {
+	margin: 0 auto;
+}
+
+/* Styles for welcome-window-container goes here */
+.welcome-window-container {
+	text-align: center;
+}
+
+.welcome-heading {
+	margin: 10px 0 10px 0;
+}
+
+.category-container {
+	justify-content: center;
+}
+
+.category-items {
+	padding: 20px;
+}
+
+.category-img {
+	margin: 0 auto;
+}
+
+.category-items > p {
+	margin: 10px auto;
+}
+
 @media screen and (max-width: 425px) {
 	.brand-logo-container,
 	.welcome-user {
@@ -78,6 +128,15 @@ footer {
 		width: 30%;
 	}
 	.welcome-user {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	aside {
+		width: 30%;
+	}
+	.welcome-window-container {
 		width: 70%;
 	}
 }
