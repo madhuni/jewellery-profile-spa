@@ -131,6 +131,25 @@ aside {
 	min-height: 200px;
 }
 
+.edit-btn {
+	width: 150px;
+}
+
+.add-item-container {
+	padding: 20px;
+	min-height: 314px;
+	width: 240px;
+	flex-direction: column !important;
+	align-items: center;
+	background-color: #f5f2f2;
+}
+
+.add-item {
+	margin: auto;
+	display: block;
+	font-size: 50px;
+	color: gray;
+}
 
 @media screen and (max-width: 425px) {
 	.brand-logo-container,
