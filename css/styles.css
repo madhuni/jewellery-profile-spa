@@ -103,13 +103,34 @@ aside {
 	padding: 20px;
 }
 
-.category-img {
+.category-img,
+.item-image {
 	margin: 0 auto;
 }
 
-.category-items > p {
+.category-items > p,
+.item-type {
 	margin: 10px auto;
 }
+
+/* Styles for the Category page starts here */
+.category-items-container {
+	max-width: 1200px;
+}
+
+.item-section-container {
+	justify-content: flex-start;
+}
+
+.item-section {
+	padding: 20px;
+}
+
+.item-image {
+	min-width: 200px;
+	min-height: 200px;
+}
+
 
 @media screen and (max-width: 425px) {
 	.brand-logo-container,
