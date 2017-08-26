@@ -212,7 +212,7 @@ aside {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.71);
+	background-color: rgba(0, 0, 0, 0.9);
 	transition: all .5s ease;
 }
 
