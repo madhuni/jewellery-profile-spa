@@ -3,7 +3,8 @@ var user = {
         name: "Kanishka Mohan Madhuni",
         age: "24",
         sex: "Male",
-        contactInfo: "+91-8884669993"
+        contactInfo: "+91-XXXXXXXXXX",
+        profilePic: "images/resume_pic.png"
     },
     collections: {
         bracelets: [{
