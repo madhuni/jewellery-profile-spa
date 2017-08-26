@@ -95,6 +95,7 @@ myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log
     	$scope.nativeMaterial = "";
         obj.type = "";
         obj.imageUrl = "";
+        obj.material= "";
     }
 
     // function to open the modal window when the Add button is clicked
@@ -107,6 +108,7 @@ myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log
     // function for closing of modal window once the user added the item
     $scope.closeModal = function () {
     	$scope.isAddClicked = false;
+    	$scope.isEditClicked = false;
      	$scope.resetItemObject($scope.item);
     }
     
@@ -144,7 +146,7 @@ myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log
         
         // resetting the values of the item being edited with the new values
         oldObject.type = newObject.type;
-        oldObject.material = newObject.material;
+        oldObject.material = newObject.material.toLowerCase();
         oldObject.imageUrl = newObject.imageUrl;
         
         // resetting the item object
