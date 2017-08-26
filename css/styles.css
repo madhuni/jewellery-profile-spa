@@ -13,7 +13,7 @@
 .page-header {
 	margin: 0;
 	padding: 10px 30px;
-	box-shadow: 0 -8px 10px 10px grey;
+	box-shadow: 0 20px 20px -20px grey;
 	/*background-color: black;*/
 }
 
@@ -25,27 +25,28 @@
 	margin: 0 auto;
 }
 
-.user-profile-container {
-	border: 1px solid black;
+.welcome-user {
+	vertical-align: middle;
 }
 
 .user-name {
-	margin: 0;
-	height: 100%;
+	text-align: right;
+	display: block;
+	margin: 20px;
+	font-size: 18px;
 }
 
 .user-details-container {
 	text-align: center;
 	flex-direction: column !important;
-	justify-content: center;
+	justify-content: left;
+	text-align: left;
 }
 
 /* Styling for the footer starts here */
 
 footer {
-	border-top: 2px solid #272c65;
-	margin-top: 30px;
-	padding: 10px 30px;
+	padding: 40px 30px;
 	text-align: center;
 }
 
@@ -69,6 +70,7 @@ footer {
 }
 
 .social-media-list-item {
+	font-size: 25px;
 	margin: 0 5px;
 }
 
@@ -78,14 +80,27 @@ footer {
 }
 
 /* Styles for the profile-container goes here */
-.profile_container {
+.profile-container {
+	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 30px 0;
+	box-shadow: 0 20px 20px -20px grey;
+}
+
+.toggle-button {
+	position: absolute;
+	font-size: 20px;
+	/*left: 30px;*/
 }
 
 aside {
-	margin: 30px auto;
+	margin: 30px auto 0px;
 	text-align: left;
+	width: 100%;
+	max-width: 250px;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
 }
 
 .profile-pic-container {
@@ -103,6 +118,13 @@ aside {
 
 .welcome-heading {
 	margin: 10px 0 10px 0;
+	padding: 10px;
+}
+
+.category-items-container {
+	padding: 30px 0;
+	position: relative;
+	box-shadow: 0 20px 20px -20px grey;
 }
 
 .category-container {
@@ -121,6 +143,7 @@ aside {
 .category-items > p,
 .item-type {
 	margin: 10px auto;
+	font-size: 15px;
 }
 
 /* Styles for the Category page starts here */
@@ -251,7 +274,8 @@ aside {
 
 @media screen and (min-width: 550px) {
 	aside {
-		width: 30%;
+		/*width: 30%;*/
+		max-width: 250px;
 	}
 	.welcome-window-container {
 		width: 70%;
@@ -262,5 +286,23 @@ aside {
 	.input-container > i {
 		top: 5px;
 		right: 20px;
+	}
+	.user-profile-container {
+		border-right: 1px solid black;
+	}
+}
+
+@media screen and (max-width: 863px) {
+	.user-profile-container {
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+
+	.welcome-window-container {
+		width: 100%;
+	}
+
+	aside {
+		margin-bottom: 20px;
 	}
 }
