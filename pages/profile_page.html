@@ -1,7 +1,7 @@
 <div class="profile-container flex-box">
-	<aside class="user-profile-container container-fluid" ng-show=isToggleClicked>
+	<aside class="user-profile-container container-fluid">
 		<div class="profile-pic-container">
-			<img src="images/resume_pic.png" alt="User Profile Pic" class="profile-pic img-responsive img-circle">
+			<img src="{{ userProfile.profilePic }}"" alt="User Profile Pic" class="profile-pic img-responsive img-circle">
 		</div>
 		<section class="user-details-container flex-box">
 			<p class="user-detail"><span><strong>Name: </strong></span>{{ userProfile.name }}</p>
@@ -18,25 +18,26 @@
 		<hr>
 		<section>
 			<h2 class="section-heading">Choose Your Category</h2>
+			<hr>
 			<div class="container-fluid">
 				<div class="row flex-box category-container">
 					<div class="category-items">
-						<img src="images/bracelet.jpg" alt="Braceletes" class="img-responsive img-circle category-img" width="100px" height="100px">
+						<img src="images/category-images/bracelet.jpg" alt="Braceletes" class="img-responsive img-circle category-img" width="100px" height="100px">
 						<p ng-model="category">BRACELETS</p>
 						<a href="#/category_page_bracelets.html" class="btn btn-primary">View Collections</a>
 					</div>
 					<div class="category-items">
-						<img src="images/earring.jpg" alt="Earrings" class="img-responsive img-circle category-img" width="100px" height="100px">
+						<img src="images/category-images/earring.jpg" alt="Earrings" class="img-responsive img-circle category-img" width="100px" height="100px">
 						<p>EARRINGS</p>
 						<a href="#/category_page_earrings.html" class="btn btn-primary">View Collections</a>
 					</div>
 					<div class="category-items">
-						<img src="images/neclace.jpg" alt="Necklaces" class="img-responsive img-circle category-img" width="100px" height="100px">
+						<img src="images/category-images/neclace.jpg" alt="Necklaces" class="img-responsive img-circle category-img" width="100px" height="100px">
 						<p>NECKLACES</p>
 						<a href="#/category_page_necklaces.html" class="btn btn-primary">View Collections</a>
 					</div>
 					<div class="category-items">
-						<img src="images/ring.jpg" alt="Rings" class="img-responsive img-circle category-img" width="100px" height="100px">
+						<img src="images/category-images/ring.jpg" alt="Rings" class="img-responsive img-circle category-img" width="100px" height="100px">
 						<p>RINGS</p>
 						<a href="#/category_page_rings.html" class="btn btn-primary">View Collections</a>
 					</div>
