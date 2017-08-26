@@ -19,7 +19,10 @@ Blue Stone compnay's logo is used for this project. This is used only for tempor
 owned jewellery.
 * A new item can be added by using the add button. The modal window will ask for the Item type and image url in order to add the new jewellery item.
 * Items added in the collections can be edited. A modal window will appear asking for item type,
-item material and item image url. A proper URL and the proper material is required for editing the item successfully. In case if details provided are not valid, item can be lost from the collection.
+item material and item image url. **A proper URL and the proper material is required for editing the item successfully. In case if details provided are not valid, item can be lost from the collection**. There are three types of material which can be provided:
+	* Gold
+	* Diamond
+	* Silver
 * Brand Image can be used to navigate to the home page.
 
 
