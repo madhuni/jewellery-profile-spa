@@ -135,6 +135,7 @@ myApp.controller('categoryController', ['$scope', '$log', function ($scope, $log
     * This will then set the editable object to the editable object in scope
     */
     $scope.editItem = function (obj) {
+        $scope.resetItemObject($scope.item);
         $scope.isEditClicked = true;
         $scope.editableObject = obj;
     }
