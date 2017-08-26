@@ -8,54 +8,54 @@ var user = {
     collections: {
         bracelets: [{
             type: "Bangle Bracelet",
-            material: "Gold",
+            material: "gold",
             imageUrl: "images/bracelets/gold-cuff-bracelet.jpg"
         }, {
             type: "Link Bracelet",
-            material: "Diamond",
+            material: "diamond",
             imageUrl: "images/bracelets/diamond-link-bracelet.jpg"
         }, {
             type: "Cuff Bracelet",
-            material: "Silver",
+            material: "silver",
             imageUrl: "images/bracelets/silver-charm-bracelet.jpg"
         }],
         earrings: [{
             type: "Jhumkis",
-            material: "Gold",
+            material: "gold",
             imageUrl: "images/earrings/gold-jhumki.jpg"
         }, {
             type: "Chandelier Earrings",
-            material: "Diamond",
+            material: "diamond",
             imageUrl: "images/earrings/diamond-earring.jpg"
         }, {
             type: "Huggies Earrings",
-            material: "Silver",
+            material: "silver",
             imageUrl: "images/earrings/silver-huggeis.jpg"
         }],
         rings: [{
             type: "Marriage Ring",
-            material: "Gold",
+            material: "gold",
             imageUrl: "images/rings/gold-marriage-ring.jpg"
         }, {
             type: "Eternity Ring",
-            material: "Diamond",
+            material: "diamond",
             imageUrl: "images/rings/diamond-eternity-ring.jpeg"
         }, {
             type: "Knuckle Ring",
-            material: "Silver",
+            material: "silver",
             imageUrl: "images/rings/silver-knuckle-ring.jpg"
         }],
     	necklaces: [{
     		type: "Opera Necklace",
-    		material: "Gold",
+    		material: "gold",
     		imageUrl: "images/necklaces/gold-opera-necklace.jpg"
     	}, {
     		type: "Collar Necklace",
-    		material: "Diamond",
+    		material: "diamond",
     		imageUrl: "images/necklaces/diamond-collar-necklace.jpg"
     	}, {
     		type: "Thread Necklace",
-    		material: "Silver",
+    		material: "silver",
     		imageUrl: "images/necklaces/silver-thread-nacklace.jpg"
     	}]
     }
