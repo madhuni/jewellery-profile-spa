@@ -189,10 +189,11 @@ aside {
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.71);
+	transition: all .5s ease;
 }
 
 .input-container {
-	width: 60%;
+	width: 280px;
 	margin: auto;
 	border: 2px solid white;
 	padding: 20px;
@@ -211,14 +212,16 @@ aside {
 	font-size: 20px;
 	padding: 10px;
 	margin: 10px 0;
+	border-radius: 10px;
+	border: 0px;
 }
 
 .input-container > i {
 	font-size: 40px !important;
 	color: white;
 	position: absolute;
-	top: 5px;
-	right: 20px;
+	top: -21px;
+	right: -17px;
 }
 
 .input-container > i:hover {
@@ -252,5 +255,12 @@ aside {
 	}
 	.welcome-window-container {
 		width: 70%;
+	}
+	.input-container {
+		width: 500px;
+	}
+	.input-container > i {
+		top: 5px;
+		right: 20px;
 	}
 }
