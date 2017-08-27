@@ -2,9 +2,6 @@
 
 This is an Angular JS powered web-app which will showcase the Jewellery items owned by the User.
 
-## Credit
-Blue Stone company's logo is used for this project. This is used only for temporary basis and will be removed once the project requirement will finish.
-
 ## Getting Started
 
 ### Installing
