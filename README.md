@@ -24,6 +24,7 @@ item material, and item image URL. **_A proper URL and the proper material is re
 	* Diamond
 	* Silver
 * Brand Image can be used to navigate to the home page.
+* Navigation bar in the home page can be used to navigate through all the pages of the application.
 
 
 ## Built With
