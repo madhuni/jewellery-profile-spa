@@ -24,6 +24,12 @@
 
 .brand-logo {
 	margin: 0 auto;
+	border: 1px solid #e0d6d6;
+	display: block;
+	min-width: 200px;
+	min-height: 100px;
+	max-width: 200px;
+	max-height: 100px;
 }
 
 .welcome-user {
@@ -67,6 +73,9 @@ footer {
 
 .footer-logo-image {
 	margin: 0 auto;
+	width: 200px;
+	height: 100px;
+	border: 1px solid #e0d6d6;
 }
 
 .copyright-desc {
